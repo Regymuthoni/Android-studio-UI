@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer_list">
+
+    <TextView
+        android:text="language: English (United States"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLanguage"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/etPassword"
+        android:hint="password"
+        android:background="@drawable/border"
+        android:layout_below="@+id/etName"
+        android:textColorHint="@color/colorWhite"
+        />
+
+
+    <TextView
+        android:text="forgot your login detail?Get help sign in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tvIcon"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_below="@+id/login_button"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tvOR"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="OR"
+        android:layout_below="@id/tvIcon"
+        android:textColor="#FFFFFF"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@id/tvOR"
+        android:background="#ffffff"
+        android:layout_below="@id/tvIcon"
+        android:id="@+id/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/tvOR"
+        android:background="#ffffff"
+        android:layout_below="@id/tvIcon"
+        />
+
+    <Button
+        android:text="Don't have an account?Sign up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_signup"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/half_overlay"
+        />
+
+    <Button
+        android:text="Log in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:layout_marginTop="55dp"
+        android:textSize="20sp"
+        android:textColorHint="@color/colorWhite"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="log in with facebook"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/tVFacebook"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_below="@+id/tvOR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="user@gmail.com"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textAlignment="center"
+        android:id="@+id/etName"
+        android:textColorHint="@color/colorWhite"
+        android:layout_below="@+id/tvLanguage"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <CheckedTextView
+        android:text="CheckedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkedTextView"
+        android:layout_above="@+id/button_signup"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_marginBottom="26dp" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkedTextView"
+        android:layout_toRightOf="@+id/tvOR"
+        android:layout_toEndOf="@+id/tvOR" />
+
+
+</RelativeLayout>
+

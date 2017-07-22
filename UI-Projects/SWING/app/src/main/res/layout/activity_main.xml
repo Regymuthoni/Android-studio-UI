@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.student.swing.MainActivity"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="70dp"
+            android:id="@+id/editText"
+            android:textStyle="bold"
+            android:text="Swing"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Music App"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="40dp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textEmailAddress"
+            android:text="Email address"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:ems="10"
+            android:id="@+id/editText5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:text="password"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:id="@+id/editText6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <CheckBox
+                android:text="remember me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                android:layout_weight="1"
+                android:checked="false"/>
+
+            <TextView
+                android:text="forgot password?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:textSize="17dp"
+
+
+
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:text="LOGIN"
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:id="@+id/button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
